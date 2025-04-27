@@ -30,6 +30,8 @@ def main_fun():
                 deposit_amount()
             elif choice == 4:
                 change_pin()
+            elif choice == 5:
+                return_ATM()
                 
 
 
@@ -55,6 +57,7 @@ def check_balance():
     print("fetching account balance...")
     t.sleep(2.5)
     print("Your current balance is: ", balance)
+    print("\n")
 
 
 def draw_amount():
@@ -77,6 +80,7 @@ def draw_amount():
                 print("Please take your cash...")
                 t.sleep(2.5)
                 print("Transaction successful")
+                print("\n")
             else:
                 print("Transaction cancelled")
                 t.sleep(2.5)
@@ -105,6 +109,7 @@ def deposit_amount():
                 t.sleep(2.5)
                 print("Please take your card...")
                 print(" thank you for using our ATM service...")
+                print("\n")
             else:
                 print("Transaction cancelled")
                 t.sleep(2.5)
@@ -133,12 +138,19 @@ def change_pin():
                 t.sleep(2.5)
                 print("Please take your card...")
                 print(" thank you for using our ATM service...")
+                print("\n")
             else:
                 print("Transaction cancelled")
                 t.sleep(2.5)
                 print("Please take your card...")
             break
 
-
+def return_ATM():
+    print("processing ATM card return...")
+    t.sleep(2.5)
+    print("Please take your card...")
+    t.sleep(2.5)
+    print("thank you for using our ATM service...")
+    print("\n")
 
 main_fun()
